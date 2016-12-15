@@ -1,7 +1,7 @@
 import cherrypy
 import os
 from nifty50Data import *
-# from getData import *
+from getData import *
 from threading import Thread
 
 

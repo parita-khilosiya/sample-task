@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # background_thread.start()
 
     cherrypy.config.update({'server.socket_host': '0.0.0.0'})
-    cherrypy.config.update({'server.socket_port': process.env.PORT})
+    cherrypy.config.update({'server.socket_port': int(os.environ.get("PORT", 5000))})
 
 
     webapp = Nifty50Diplay()

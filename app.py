@@ -1,7 +1,7 @@
 import cherrypy
 import os
 from nifty50Data import *
-from getData import *
+# from getData import *
 from threading import Thread
 
 
@@ -20,8 +20,8 @@ if __name__ == '__main__':
             'tools.staticdir.dir': './public'
         }
     }
-    background_thread = Thread(target=scrapData)
-    background_thread.start()
+    # background_thread = Thread(target=scrapData)
+    # background_thread.start()
 
     webapp = Nifty50Diplay()
     webapp.getdata = Nifty50WebService()

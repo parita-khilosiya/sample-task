@@ -1,6 +1,6 @@
-gunicorn==19.3.0
 pypiwin32==219
+gunicorn==19.6.0
 redis==2.10.5
 requests==2.12.3
 six==1.10.0
-cherrypy==8.1.2.dev16+ng3dcb668.d20161211.post.20161211
+cherrypy==8.1.3.dev16+ng3dcb668.d20161211.post.20161211

@@ -1,4 +1,4 @@
-gunicorn==19.6.0
+gunicorn==19.3.0
 pypiwin32==219
 redis==2.10.5
 requests==2.12.3

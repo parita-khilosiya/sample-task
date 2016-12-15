@@ -4,7 +4,7 @@ import datetime
 import time
 
 import redis
-conn = redis.Redis('localhost')
+conn = redis.Redis(host="pub-redis-13650.us-east-1-2.1.ec2.garantiadata.com", port=13650, password="redis1234")
 
 def scrapData():
 	count = 0

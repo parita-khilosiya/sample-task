@@ -23,6 +23,10 @@ if __name__ == '__main__':
     # background_thread = Thread(target=scrapData)
     # background_thread.start()
 
+    cherrypy.config.update({'server.socket_host': '0.0.0.0'})
+    cherrypy.config.update({'server.socket_port': process.env.PORT || 8080})
+
+
     webapp = Nifty50Diplay()
     webapp.getdata = Nifty50WebService()
     cherrypy.quickstart(webapp, '/', conf)
